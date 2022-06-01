@@ -1,0 +1,1050 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*<------------------- ETIQUETAS GENERALES ------------------->*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Kanit', sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size:3rem ;
+}
+
+h3 {
+    font-size:2rem ;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+/*-------- GRID LAYOUT --------*/   
+
+      
+
+/*<------------------- COMIENZO HEADER ------------------->*/
+header {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "logo nav"
+    "header_txt header_txt";
+    
+    grid-template-rows: 10rem 3rem;
+    grid-template-columns:1fr 2fr;
+    background-color: wheat;
+    font-family: 'Kanit', sans-serif;
+}
+
+.nav_burger_conteiner {
+    display: none;
+}
+
+.header_nav {
+    display: flex;
+    flex-direction: row;
+    justify-self: end;
+
+}
+
+.header_links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: end;
+}
+
+.header_link {
+    margin: auto 1rem;
+    font-size: 1.3rem;
+}
+
+.header_logo {
+    margin-top: auto;
+    margin-left: 2rem;
+}
+
+.header_logo img {
+    width: 14rem;
+}
+
+.header_redes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto 1.5rem;
+}
+
+.header_redes img {
+    width: 1.8rem;
+    margin: 0.5rem;
+}
+
+
+.header_txt{
+    font-family: 'Caveat', cursive;
+    font-size: 1.6rem;
+    color: black;
+    grid-column: 1/4;
+    margin-left: 15rem;
+}
+
+.header_txt span {
+    color: rgb(95, 35, 35);
+    font-weight: 600;
+}
+
+/* FIN HEADER */
+/*<------------------- COMIENZO FOOTER------------------->*/
+footer {
+    background-color: wheat;
+    display: grid;
+    grid-template-areas:
+        "footer_logo footer_redes"
+        "footer_copyright footer_copyright";
+    
+    grid-template-rows: 1fr 2rem;
+    grid-template-columns:1fr ;
+
+}
+
+.footer_redes {
+    margin: 2rem 2rem;
+}
+.footer_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+.footer_redes p {
+    font-weight: 600;
+}
+
+
+.footer_redes img {
+    width: 2.5rem;
+    margin: 1rem 0.5rem;
+}
+
+
+.footer_logo img {
+    width: 15rem;
+    margin-top: 3rem;
+    margin-left: 4rem;
+}
+
+.footer_copyright {
+    grid-column: 1/4;
+    text-align: center;
+}
+.footer_copyright p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* FIN FOOTER */
+
+
+
+
+
+
+/*----------------------------------- HOME - INICIO -----------------------------------*/
+.body_home {
+    background-image: url(../assets/backgrounds/background0.png);
+}
+
+.home_main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5rem auto 10rem;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.home_main_titulo {
+        background-color: rgba(245, 222, 179, 0.5);
+        font-family: 'Caveat', cursive;
+        text-align: center;
+        border-top: 10px solid rgb(95, 35, 35);
+        border-bottom: 10px solid rgb(95, 35, 35);
+}
+.home_main_txt {
+    margin: 5rem 5rem;
+    text-align: center;
+}
+
+
+
+.home_main img {
+    width: 44rem;
+    margin: auto;
+    display: block;
+    box-shadow: 0px 0px 10px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+.home_main_btn {
+        display: inline-block;
+        margin: 5rem auto;
+}
+
+.home_main_btn a {
+    display: inline-block;
+    position: relative;
+    background-color:rgb(95, 35, 35);
+    color: white;
+    border-radius: 5%;
+    padding: 1rem 2rem;
+    box-shadow: 0px 0px 8px black;
+    transition: all 0.3s ease-in-out;
+}
+.home_main_btn a:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px;
+    color: black;
+    background-color: wheat;
+}
+
+
+
+
+/*<---------------- Seccion A ---------------->*/
+/*<--- Tipos de sabores --->*/
+
+.home_productos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10rem auto;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.home_productos_titulo {
+    margin-bottom: 2rem;
+    background-color: rgba(245, 222, 179, 0.5);
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    border-top: 10px solid rgb(95, 35, 35);
+    border-bottom: 10px solid rgb(95, 35, 35);
+    
+}
+
+.home_productos_txt {
+    margin: 5rem 5rem;
+    text-align: center;
+}
+
+.home_productos_imagenes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.home_productos_imagenes img {
+    width: 14rem;
+    background-color: white;
+    border-radius: 10%;
+    box-shadow: 0px 0px 15px;
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.home_productos_img_cremas:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px wheat;
+}
+
+.home_productos_img_chocolate:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px rgb(91, 59, 16);
+}
+
+.home_productos_img_ddl:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px burlywood;
+}
+
+
+.home_productos_imagenes h2 {
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+
+.home_sabores_btn {
+    text-align: center;
+    margin: 5rem auto;
+}
+
+
+.home_productos a {
+    display: inline-block;
+    position: relative;
+    background-color:rgb(95, 35, 35);
+    color: white;
+    border-radius: 5%;
+    padding: 1rem 2rem;
+    box-shadow: 0px 0px 8px black;
+    transition: all 0.3s ease-in-out;
+}
+
+.home_productos a:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px;
+    color: black;
+    background-color: wheat;
+
+}
+
+
+
+/*<---------------- Seccion B ---------------->*/
+/*<--- Preparacion con video --->*/
+
+.home_preparacion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10rem auto;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.home_preparacion_titulo {
+        margin-bottom: 2rem;
+        background-color: rgba(245, 222, 179, 0.5);
+        font-family: 'Caveat', cursive;
+        text-align: center;
+        border-top: 10px solid rgb(95, 35, 35);
+        border-bottom: 10px solid rgb(95, 35, 35);
+}
+.home_preparacion_txt {
+    margin: 5rem 5rem;
+    text-align: center;
+}
+
+
+
+.home_preparacion video {
+    width: 44rem;
+    display: block;
+    object-fit: contain;
+    margin: 5rem auto;
+    box-shadow: 0px 0px 10px;
+}
+
+/*<------------------- PAGINA - NUESTRAS HISTORIA -------------------*/
+.body_historia {
+    background-image: url(../assets/backgrounds/background1.png);   
+}
+
+
+.historia_main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5rem auto;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.historia_main_titulo {
+    background-color: rgba(245, 222, 179, 0.5);
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-top: 10px solid rgb(95, 35, 35);
+    border-bottom: 10px solid rgb(95, 35, 35);
+}
+
+.historia_main_txt {
+    margin: 5rem 5rem;
+    text-align: center;
+}
+
+.historia_main_img {
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+}
+
+
+.historia_main img {
+    width: 44rem;
+    margin: auto;
+    display: block;
+    box-shadow: 0px 0px 10px;
+}
+
+.historia_seccion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5rem auto;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+
+.historia_seccion_titulo {
+    background-color: rgba(245, 222, 179, 0.5);
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    margin-bottom: 2rem;
+    border-top: 10px solid rgb(95, 35, 35);
+    border-bottom: 10px solid rgb(95, 35, 35);
+}
+
+.historia_seccion_txt {
+    margin: 5rem 5rem;
+    text-align: center;
+}
+
+.historia_seccion_img {
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+}
+
+.historia_seccion img {
+    width: 44rem;
+    margin: auto;
+    display: block;
+    box-shadow: 0px 0px 10px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* FIN PAGINA HISTORIA */
+
+/*<------------------- COMIENZO PAGINA - SABORES ------------------->*/
+
+.body_sabores {
+    background-image: url(../assets/backgrounds/background2.png);   
+}
+
+
+.sabores_main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem auto;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.sabores_main_titulo {
+    background-color: rgba(245, 222, 179, 0.5);
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    border-top: 10px solid rgb(95, 35, 35);
+    border-bottom: 10px solid rgb(95, 35, 35);
+}
+
+.sabores_main_botones {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15rem;
+}
+.sabores_main_botones a {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.btn_cremas {
+    cursor: pointer;
+    background-image: url(../assets/home_imagenes/cremas.png);
+    background-size: cover;
+    color: white;
+    padding: 10rem 8rem;
+    border-radius: 3%;
+    margin-top: 3rem;
+    font-family: Caveat, cursive;
+    font-size: 3rem;
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: 0px 0px 5px black;
+    box-shadow: 5px 5px 10px black;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn_cremas:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 25px black;
+}
+
+
+
+.btn_chocolates {
+    cursor: pointer;
+    background-image: url(../assets/home_imagenes/chocolate.png);
+    background-size: cover;
+    color: white;
+    padding: 10rem 6.5rem;
+    border-radius: 3%;
+    margin-top: 3rem;
+    font-family: Caveat, cursive;
+    font-size: 3rem;
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: 0px 0px 5px black;
+    box-shadow: 5px 5px 10px black;
+    transition: all 0.3s ease-in-out;
+}
+.btn_chocolates:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 25px black;
+}
+
+
+.btn_leche {
+    cursor: pointer;
+    background-image: url(../assets/home_imagenes/ddl.png);
+    background-size: cover;
+    color: white;
+    padding: 10rem 4.3rem;
+    border-radius: 3%;
+    margin-top: 3rem;
+    font-family: Caveat, cursive;
+    font-size: 3rem;
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: 0px 0px 5px black;
+    box-shadow: 5px 5px 10px black;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn_leche:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 25px black;
+}
+
+
+table {
+    margin: 2rem auto;
+}
+
+.sabores_secciones_titulos {
+    text-align: center;
+    font-family:'Caveat', cursive;
+}
+
+.listado_sabores li {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    list-style: none;
+}
+
+
+.sabores_secciona {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 40rem;
+    margin: 5rem auto;
+    border: 1px solid wheat;
+    border-top: 10px solid wheat;
+}
+
+
+.sabores_seccionb {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 40rem;
+    margin: 5rem auto;
+    border: 1px solid rgb(59, 38, 9);
+    border-top: 10px solid rgb(59, 38, 9);
+}
+
+
+.sabores_seccionc {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 40rem;
+    margin: 5rem auto 10rem;
+    border: 1px solid burlywood;
+    border-top: 10px solid burlywood;
+}
+
+
+
+
+/* FIN PAGINA SABORES */
+
+/*<------------------- COMIENZO - GALERIA ------------------->*/
+
+.body_galeria {
+    background-image: url(../assets/backgrounds/background5.png);   
+}
+
+
+.galeria_main {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5rem auto 10rem;
+
+}
+
+.galeria_main_titulo {
+    width: 100%;
+    background-color: rgba(245, 222, 179, 0.5);
+    color: black;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    border-top: 10px solid rgb(95, 35, 35);
+    border-bottom: 10px solid rgb(95, 35, 35);
+}
+.galeria_imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    width: 95%;
+    margin: 0rem auto 10rem;
+    padding: 40px 0;
+    grid-gap: 10px;
+}
+
+
+
+
+.galeria_main img {
+    vertical-align: top;
+    width: 100%;
+    box-shadow: 0px 0px 5px;
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+}
+
+.galeria_main img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+
+
+/*<------------------- COMIENZO PAGINA - CONTACTOS ------------------->*/
+
+.body_contactos {
+    background-image: url(../assets/backgrounds/background6.png);   
+}
+
+
+
+.contactos_main {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   background-color:rgba(255, 255, 255, 0.9);
+   margin: 5rem auto 10rem;
+}
+
+.contactos_main_titulo {
+    width: 100%;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: rgba(245, 222, 179, 0.5);
+    border-top: 10px solid rgb(95, 35, 35);
+    border-bottom: 10px solid rgb(95, 35, 35);
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    margin: 2rem auto;
+    font-size: 1.3rem;
+}
+
+
+.formulario div {
+    margin-top: 0.5rem;
+}
+
+.field {
+    width: 100%;
+    padding: 0.4rem;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.1rem;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 0.25rem;
+}
+
+.newslatter_txt {
+    font-size: 1.2rem;
+}
+
+.form_boton {
+    cursor: pointer;
+    background-color: rgb(95, 35, 35,0.9);
+    color: white;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    font-family:'Kanit', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0px 0px 2px black;
+    transition: all 0.3s ease-in-out;
+}
+.form_boton:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 5px;
+    color: black;
+    background-color: wheat;
+}
+
+
+/*------------------------------------------------- MEDIA QUERIES -------------------------------------------------*/
+
+/*----------------------------------- SCREEN 1200px-----------------------------------*/
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+    
+    .header_redes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sabores_main_botones {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .btn_cremas {
+        padding: 7rem 7rem;
+    }
+    
+    .btn_chocolates {
+        padding: 7rem 6rem;
+    }
+
+    .btn_leche {
+        padding: 7rem 4rem;
+    }
+
+}
+
+/*----------------------------------- SCREEN 780px-----------------------------------*/
+
+@media (max-width: 780px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+ /*------------ header ------------*/
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 10rem;    
+    }
+    
+    .nav_burger_conteiner{
+        display: block;
+        align-self: center;
+        margin-right: 1rem;
+    }
+
+    .nav_burger img {
+        width: 3rem;
+    }
+
+
+    .header_nav {
+        display: none;
+        margin: 0 1rem;  
+    }
+  
+    .header_link {
+        margin: auto 0.6rem;
+    }
+
+    .header_logo {
+        align-self: center;
+        margin: 0;
+        margin-left: 1rem;
+    }
+
+    .header_logo img {
+        width: 12rem;
+    }
+
+    .header_txt {
+        display: none;
+    }
+    .header_redes {
+        display: none;
+    }
+ /*------------ home ------------*/
+    .home_main_img img {
+        width: 95%;
+    }
+    .home_main_txt {
+        margin: 3rem 1rem;
+    }
+     
+    .home_productos_imagenes img {
+        width: 12rem;
+    }
+    
+    .home_productos_txt {
+        margin: 3rem 1rem;
+    }
+    .home_preparacion_video video {
+        width: 95%;
+    }
+    
+    .home_preparacion_txt {
+        margin: 3rem 1rem;
+    }    
+/*------------ Historia ------------*/
+    .historia_main_titulo {
+        margin: 0;
+    }
+    .historia_main_img img {
+        width: 95%;
+    }
+    
+    .historia_main_txt {
+        margin: 3rem 1rem;
+    }
+    .historia_seccion_img img {
+        width: 95%;
+    }
+    
+    .historia_seccion_txt {
+        margin: 3rem 1rem;
+    }
+    
+/*------------ Sabores ------------*/
+    .sabores_main_botones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn_cremas {
+        padding: 7rem 6.5rem;
+    }
+    
+    .btn_chocolates {
+        padding: 7rem 5rem;
+    }
+
+    .btn_leche {
+        padding: 7rem 2.9rem;
+    }
+
+    .listado_sabores li {
+        font-size: 1.2rem;
+    }
+
+    .sabores_secciona {
+        width: 90%;
+    }
+    .sabores_seccionb {
+        width: 90%;
+    }
+    .sabores_seccionc {
+        width: 90%;
+    }
+/*------------ Contactos ------------*/
+    .contactos_main_txt {
+        margin: 0 2rem;
+    }
+  
+    .formulario {
+        width: 100%;
+        font-size: 1.2rem;
+        justify-items: center;
+        margin-left: 0.7rem;
+    }
+
+    .newslatter_txt {
+        font-size: 1.1rem;
+    }
+
+    .field {
+        width: 95%;
+    }
+    .form_boton {
+        width: 95%;
+        justify-items: center;
+    }
+
+}
+
+/*----------------------------------- SCREEN 480px-----------------------------------*/
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+ /*------------ header ------------*/
+    .header_redes {
+        display: none;
+    }
+    
+    .header_txt{
+        display: none;
+    }
+/*------------ footer ------------*/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 2rem;
+        text-align: center;
+    }
+    
+    .footer_logo {
+        width: 100%;
+        margin: 3rem auto 1rem;
+    }
+    
+    .footer_logo img {
+        margin: auto;
+    }
+    
+    .footer_redes {
+        width: 100%;
+        grid-row: 2;
+        margin: 1rem auto;
+    }
+
+
+    .footer_copyright {
+        width: 100%;
+        grid-row: 3;
+        text-align: center;
+    }
+    .footer_copyright p {
+        font-size: 0.9rem;
+    }
+
+ /*------------ home------------*/
+    
+    .home_productos_imagenes {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+ /*------------ Sabores ------------*/  
+    .sabores_main_botones a {
+        font-size: 2rem;
+    }
+
+    .btn_cremas {
+        padding: 6rem 20%;
+    }
+    
+    .btn_chocolates {
+        padding: 6rem 16%;
+    }
+
+    .btn_leche {
+        padding: 6rem 10.5%;
+    }
+
+    .listado_sabores li {
+        font-size: 1.1rem;
+    }
+
+    .galeria_main_titulo {
+        margin-bottom: 0;
+    }
+    .galeria_imagenes {
+        display: flex;
+        flex-direction: column;
+    }
+/*------------ Contactos ------------*/
+    .formulario {
+        width: 100%;
+        font-size: 1.1rem;
+        justify-items: center;
+        margin-left: 0.7rem;
+    }
+    .newslatter_txt {
+        font-size: 1rem;
+    }
+
+}
