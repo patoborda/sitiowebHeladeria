@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,40 +9,47 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kanit:wght@200&display=swap" rel="stylesheet">
+        <!-- linkear animaciones AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- linkear js -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <!-- linkear nuestro css -->
         <link rel="stylesheet" href="./css/style.css">
         <title>HeLar</title>
     </head>
 <body class="body_home">
-        <!-- Comienzo de División con Header -->
-            <header>
-                <div class="header_logo">
-                    <a href="index.html"><img src="./assets/logo/titulo_pagina2.png"  alt="helar"></a>
-                </div>
-                <nav class="header_nav">
-                    <ul class="header_links">
-                        <li class="header_link"><a href="index.html">Inicio</li></a>
-                        <li class="header_link"><a href="./vistas/nuestra_historia.html">Nosotros</li></a>
-                        <li class="header_link"><a href="./vistas/sabores.html">Sabores</li></a>
-                        <li class="header_link"><a href="./vistas/galeria.html">Galería</li></a>
-                        <li class="header_link"><a href="./vistas/contactos.html">Contacto</li></a>         
-                    </ul>          
-                    <div class="header_redes">
-                        <a href="https://www.facebook.com/"><img src="./assets/redes/facebook.png" alt="facebook"></a>
-                        <a href="https://www.instagram.com/"><img src="./assets/redes/instagram.png" alt="instagram"></a>
-                        <a href="https://www.instagram.com/"><img src="./assets/redes/twitter.png" alt="twitter"></a>
-                    </div>    
-                 </nav>
-                 <div class="nav_burger_conteiner">
-                    <label for="" class="nav_burger">
-                        <img src="./assets/logo/menu_burger.png" alt="nav">
-                    </label>
-                 </div>
-                <p class="header_txt">Nada mejor que disfrutar de un buen helado<span> Artesanal...</span></p>  
+         <!-- Comienzo de División con Header -->
+         <header >
+            <div class="header_logo" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <a href="index.html"><img src="./assets/logo/titulo_pagina2.png"  alt="helar"></a>
+            </div>
+            <nav class="header_nav" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                <ul class="header_links">
+                    <li class="header_link"><a href="index.html">Inicio</li></a>
+                    <li class="header_link"><a href="./vistas/nuestra_historia.html">Nosotros</li></a>
+                    <li class="header_link"><a href="./vistas/sabores.html">Sabores</li></a>
+                    <li class="header_link"><a href="./vistas/galeria.html">Galería</li></a>
+                    <li class="header_link"><a href="./vistas/contactos.html">Contacto</li></a>         
+                </ul>          
+                <div class="header_redes" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                    <a href="https://www.facebook.com/"><img src="./assets/redes/facebook.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="./assets/redes/instagram.png" alt="instagram"></a>
+                    <a href="https://www.twitter.com/"><img src="./assets/redes/twitter.png" alt="twitter"></a>
+                </div>    
+             </nav>
+             <div class="nav_burger_conteiner" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                <label for="" class="nav_burger">
+                    <img src="./assets/logo/menu_burger.png" alt="nav">
+                </label>
+             </div>
+            <p class="header_txt" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            Nada mejor que disfrutar de un buen helado<span data-aos="fade-right" data-aos-offset="300"data-aos-duration ="1000" data-aos-easing="ease-in-sine"> Artesanal...</span>
+            </p>  
             </header>
-        <!-- Fin División con Header  -->    
+        <!-- Fin División con Header  -->
         <!-- Comienzo Contenido principal -->
-            <main class="home_main">
+            <main class="home_main" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-once="true">
                 <div class="home_main_titulo">
                     <h1>Sobre nosotros</h1>
                 </div>
@@ -61,39 +68,41 @@
             </main>
         <!-- Fin Contenido principal-->
         <!-- Comienzo primera sección -->
-            <section class="home_productos">
-                <div class="home_productos_titulo">
-                    <h1>Nuestros productos</h1> 
-                </div>
-                <div class="home_productos_txt">
-                    <p>
-                    Nuestro local te ofrece una amplia variedad de sabores tanto en cremas, chocolates y dulce de leche.
-                    <br> También ofrecemos copas de helados especiales para algún evento en particular!
-                    </p> 
-                </div>
-                <div class="home_productos_imagenes">
-                    <div class="home_productos_cremas">
-                        <h2>Cremas</h2>
-                        <img class="home_productos_img_cremas" src="./assets/home_imagenes/cremas.png" alt="crema_chantilly">
+            <section class="home_productos" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom" data-aos-once="true">
+                    <div class="home_productos_titulo" >
+                        <h1>Nuestros productos</h1> 
                     </div>
-                    <div class="home_productos_chocolates">
-                        <h2>Chocolates</h2> 
-                        <img class="home_productos_img_chocolate" src="./assets/home_imagenes/chocolate.png" alt="chocolate">
+                    <div class="home_productos_txt">
+                        <p>
+                        Nuestro local te ofrece una amplia variedad de sabores tanto en cremas, chocolates y dulce de leche.
+                        <br> También ofrecemos copas de helados especiales para algún evento en particular!
+                        </p> 
                     </div>
-                    <div class="home_productos_ddl">
-                        <h2>Dulces de leche</h2>
-                        <img class="home_productos_img_ddl" src="./assets/home_imagenes/ddl.png" alt="dulce de leche">
+                    <div class="home_productos_imagenes">
+                        <div class="home_productos_cremas">
+                            <h2>Cremas</h2>
+                            <img class="home_productos_img_cremas" src="./assets/home_imagenes/cremas.png" alt="crema_chantilly">
+                        </div>
+                        <div class="home_productos_chocolates">
+                            <h2>Chocolates</h2> 
+                            <img class="home_productos_img_chocolate" src="./assets/home_imagenes/chocolate.png" alt="chocolate">
+                        </div>
+                        <div class="home_productos_ddl">
+                            <h2>Dulces de leche</h2>
+                            <img class="home_productos_img_ddl" src="./assets/home_imagenes/ddl.png" alt="dulce de leche">
+                        </div>
                     </div>
-                </div>
-                <div class="home_sabores_btn">
-                    <a href="./vistas/sabores.html">Ver sabores</a>
-                </div>
+                    <div class="home_sabores_btn">
+                        <a href="./vistas/sabores.html">Ver sabores</a>
+                    </div>
             </section>
         <!-- Fin primera sección -->
         <!-- Comienzo segunda sección -->
-            <section class="home_preparacion">
+            <section class="home_preparacion" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom" data-aos-once="true">
                 <div class="home_preparacion_titulo">
-                    <h1 >Preparación</h1>
+                    <h1>Preparación</h1>
                 </div>
                 <div class="home_preparacion_txt">   
                     <p>
@@ -123,5 +132,9 @@
                 </div>   
             </footer>
         <!-- Fin footer -->
-</body>
+        <!------------------------ Scripts ------------------------>    
+        <script>
+            AOS.init();
+        </script>
+    </body>
 </html>
