@@ -498,9 +498,12 @@ footer {
     transition: all 0.3s ease-in-out;
 }
 
+
+
 .btn_cremas:hover {
     transform: scale(1.1);
     box-shadow: 10px 10px 25px black;
+    color: wheat;
 }
 
 
@@ -524,6 +527,7 @@ footer {
 .btn_chocolates:hover {
     transform: scale(1.1);
     box-shadow: 10px 10px 25px black;
+    color: wheat;
 }
 
 
@@ -547,6 +551,7 @@ footer {
 .btn_leche:hover {
     transform: scale(1.1);
     box-shadow: 10px 10px 25px black;
+    color: wheat;
 }
 
 
