@@ -1,0 +1,60 @@
+/*<------------------- COMIENZO HEADER ------------------->*/
+.container-fluid {
+    background-color: wheat;
+    font-family: 'Kanit', sans-serif;
+}
+
+.navbar {
+   padding: 0;
+
+    .navbar-nav {
+        margin: 0 2rem;
+        font-size: 1.2rem;
+        transition: all 0.3s ease-in-out;
+
+        :hover {
+            transform: scale(1.01);
+            color: rgb(95, 35, 35);
+            font-weight: 600;
+        }
+        .nav-item {
+            margin: 0 0.5rem;
+        }
+    }
+
+}
+
+
+.header-logo {
+    margin: 2rem;
+    width: 14rem;
+}
+.nav-link img {
+    width: 1.8rem;
+}
+
+.header-redes {
+    display: flex;
+    flex-direction: row;
+    margin: 0 1rem;
+
+    .header-red {
+        margin: 0 5px;
+    }
+}
+
+
+.header-txt{
+    position: absolute;
+    font-family: 'Caveat', cursive;
+    font-size: 1.6rem;
+    color: black;
+    top: 8rem;
+    left: 20rem;
+
+    span {
+        color: rgb(95, 35, 35);
+        font-weight: 600;
+    }
+}
+/* FIN HEADER */

@@ -16,7 +16,7 @@
         <!-- bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <!-- Nuestro css -->
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/estilos.css">
         <title>HeLar</title>
     </head>
     <body class="body_contactos">
@@ -67,56 +67,56 @@
         <!-- Fin Header  -->
         <!-- Comienzo Contenido principal --> 
             <main class="contactos_main" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-once="true">
-                    <div class="contactos_main_titulo">
+                    <div class="contactos_main__titulo">
                     <h1>Contáctanos</h1>
                     </div>
-                    <div class="contactos_main_txt">   
+                    <div class="contactos_main__txt">   
                         <p>Déjanos tus datos y consulta.<br>
                         Nos estaremos comunicando lo mas pronto posible con usted...</p>
                     </div>
                     <!-- Comienzo de formulario -->
-                    <form class="formulario" action="" method="get" enctype="text/plain">
+                    <form class="contactos_main__formulario" action="" method="get" enctype="text/plain">
                         <div> 
                             <label for="userName">Nombre</label>
-                            <input type="text" name="userName" id="userName" class="field" required>
+                            <input type="text" name="userName" id="userName" class="contactos_main__field" required>
                         </div>
                         <div>
                             <label for="userSurname">Apellido</label>
-                            <input type="text" name="userSurname" id="userSurname" class="field" required>                      
+                            <input type="text" name="userSurname" id="userSurname" class="contactos_main__field" required>                      
                         </div>
                         <div>
                             <label for="userMail">Email</label>
-                            <input type="email" name="userMail" id="userMail" class="field" required >
+                            <input type="email" name="userMail" id="userMail" class="contactos_main__field" required >
                         </div>                                         
                         <div>
-                            <label class="newslatter_txt" for="newslatter">¿Desea suscribirse a nuestro Newslatter?</label> 
+                            <label class="contactos_main__newslatter_txt" for="newslatter">¿Desea suscribirse a nuestro Newslatter?</label> 
                             <input type="checkbox" name="newslatter" id="newslatter">
                         </div>
                         <div>
                             <label for="consultas">Consulta</label>
                         </div>
                         <div>
-                            <textarea name="consultas" id="consultas" cols="30" rows="10" placeholder="Escribe tu consulta aquí..." class="field" maxlength="500" required></textarea>
+                            <textarea name="consultas" id="consultas" cols="30" rows="10" placeholder="Escribe tu consulta aquí..." class="contactos_main__field" maxlength="500" required></textarea>
                         </div>
-                        <input type="submit" value="ENVIAR" class="form_boton">                                                      
+                        <input type="submit" value="ENVIAR" class="contactos_main__form_boton">                                                      
                     </form>
                     <!-- Fin de formulario -->
             </main>
         <!-- Fin Contenido principal-->          
         <!-- Comienzo de footer -->
-            <footer>
-                <div class="footer_logo">
+            <footer class="footer">
+                <div class="footer__logo">
                     <a href="../index.html"><img src="../assets/logo/titulo_pagina2.png"  alt="helar"></a>
                 </div>
-                <div class="footer_redes">
+                <div class="footer__redes">
                     <p>Seguinos en nuestras redes</p>
-                    <ul class="footer_links">
-                        <li class="footer_link"><a href="https://www.instagram.com/"><img class="item_link" src="../assets/redes/instagram.png" alt="instagram"></a></li>
-                        <li class="footer_link"><a href="https://twitter.com/"><img class="item_link" src="../assets/redes/twitter.png" alt="twitter"></a></li>
-                        <li class="footer_link"><a href="https://www.facebook.com/"><img class="item_link" src="../assets/redes/facebook.png" alt="facebook"></a></li>            
+                    <ul class="footer__links">
+                        <li class="footer__link"><a href="https://www.instagram.com/"><img class="item_link" src="../assets/redes/instagram.png" alt="instagram"></a></li>
+                        <li class="footer__link"><a href="https://twitter.com/"><img class="item_link" src="../assets/redes/twitter.png" alt="twitter"></a></li>
+                        <li class="footer__link"><a href="https://www.facebook.com/"><img class="item_link" src="../assets/redes/facebook.png" alt="facebook"></a></li>            
                     </ul>
                 </div>
-                <div class="footer_copyright">
+                <div class="footer__copyright">
                     <p>© 2022 Borda, Todos los derechos reservados.</p>
                 </div>   
             </footer>

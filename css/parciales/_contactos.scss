@@ -1,0 +1,65 @@
+/*<------------------- COMIENZO PAGINA - CONTACTOS ------------------->*/
+.body_contactos {
+    background-image: url(../assets/backgrounds/background6.png);   
+}
+
+.contactos_main {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   background-color:$fondo-blanco-transparente;
+   margin: 5rem auto 10rem;
+   &__titulo {
+       width: 100%;
+       font-family: $fuente-txt-1;
+       text-align: center;
+       margin-bottom: 2rem;
+       background-color: $fondo-titulos;
+       border-top: $borde-titulos;
+       border-bottom: $borde-titulos;
+   }
+   &__formulario {
+       display: flex;
+       flex-direction: column;
+       width: 35rem;
+       margin: 2rem auto;
+       font-size: 1.3rem;
+       div {
+           margin-top: 0.5rem;
+        }
+   }
+   &__field {
+       width: 100%;
+       padding: 0.4rem;
+       font-family: $fuente-txt-2;
+       font-size: 1.1rem;
+       outline: none;
+       border: 1px solid $gris;
+       border-radius: 0.25rem;
+   }
+   &__newslatter_txt {
+       font-size: 1.2rem;
+   }
+   &__form_boton {
+       cursor: pointer;
+       background-color: $marron;
+       color: white;
+       padding: 0.5rem;
+       margin-top: 0.5rem;
+       margin-bottom: 3rem;
+       font-family: $fuente-txt-2;
+       font-size: 1rem;
+       font-weight: 600;
+       border: none;
+       box-shadow: $sombra-size-0;
+       transition: all 0.3s ease-in-out;
+       &:hover {
+           transform: scale(1.01);
+           box-shadow: $sombra-size-1;
+           color: black;
+           background-color: wheat;
+       }
+   }
+}

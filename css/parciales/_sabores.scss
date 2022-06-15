@@ -1,0 +1,112 @@
+/*<------------------- COMIENZO PAGINA - SABORES ------------------->*/
+.body_sabores {
+    background-image: url(../assets/backgrounds/background2.png);   
+}
+.sabores_main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem auto 10rem;
+    background-color: $fondo-blanco-transparente;
+    &__titulo {
+        background-color: $fondo-titulos;
+        text-align: center;
+        font-family: $fuente-txt-1;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        border-top: $borde-titulos;
+        border-bottom: $borde-titulos;
+    }
+    &__botones {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 15rem;
+    }
+    &__botones a {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    &__botones a {
+        cursor: pointer;
+        background-size: cover;
+        color: white;
+        border-radius: 3%;
+        margin-top: 3rem;
+        font-family: $fuente-txt-1;
+        font-size: 3rem;
+        font-weight: 600;
+        font-style: italic;
+        text-shadow: $sombra-size-0;
+        box-shadow: $sombra-size-0;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: $sombra-size-2;
+            color: wheat;
+        }
+    }
+}
+
+.btn_cremas {
+    background-image: url(../assets/home_imagenes/cremas.png);
+    padding: 10rem 8rem;
+}
+
+
+.btn_chocolates {
+    background-image: url(../assets/home_imagenes/chocolate.png);
+    padding: 10rem 6.5rem;
+}
+
+.btn_leche {
+    background-image: url(../assets/home_imagenes/ddl.png);
+    padding: 10rem 4.3rem;
+}
+
+table {
+    margin: 2rem auto;
+}
+
+.sabores_secciones_titulos {
+    text-align: center;
+    font-family: $fuente-txt-1;
+}
+
+.listado_sabores li {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    list-style: none;
+}
+
+
+.sabores_secciona {
+    background-color: $fondo-blanco-transparente;
+    width: 40rem;
+    margin: 15rem auto;
+    border: 1px solid wheat;
+    border-top: 10px solid wheat;
+}
+
+
+.sabores_seccionb {
+    background-color: $fondo-blanco-transparente;
+    width: 40rem;
+    margin: 15rem auto;
+    border: 1px solid rgb(59, 38, 9);
+    border-top: 10px solid rgb(59, 38, 9);
+}
+
+
+.sabores_seccionc {
+    background-color: $fondo-blanco-transparente;
+    width: 40rem;
+    margin: 15rem auto;
+    border: 1px solid burlywood;
+    border-top: 10px solid burlywood;
+}
+
+/* FIN PAGINA SABORES */

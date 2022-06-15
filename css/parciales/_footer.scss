@@ -1,0 +1,46 @@
+/*<------------------- COMIENZO FOOTER------------------->*/
+.footer {
+    background-color: wheat;
+    display: grid;
+    grid-template-areas:
+        "footer_logo footer_redes"
+        "footer_copyright footer_copyright";
+    
+    grid-template-rows: 1fr 2rem;
+    grid-template-columns:1fr ;
+
+    &__redes {
+        margin: 2rem 2rem;
+        & p {
+            font-weight: 600;
+        }
+        & img {
+            width: 2.5rem;
+            margin: 1rem 0.5rem;
+        }
+        
+    }
+    &__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+    } 
+    
+    &__logo img {
+        width: 15rem;
+        margin-top: 3rem;
+        margin-left: 4rem;
+    }
+    
+    &__copyright {
+        grid-column: 1/4;
+        text-align: center;
+        & p {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+    }
+}
+/* FIN FOOTER */

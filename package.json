@@ -1,0 +1,25 @@
+{
+  "name": "sass_node",
+  "version": "1.0.0",
+  "description": "Paquete de SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/main.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patoborda/sitiowebHeladeria.git"
+  },
+  "author": "Borda Patricio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patoborda/sitiowebHeladeria/issues"
+  },
+  "homepage": "https://github.com/patoborda/sitiowebHeladeria#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

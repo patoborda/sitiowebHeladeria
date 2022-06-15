@@ -1,0 +1,161 @@
+/*----------------------------------- HOME - INICIO -----------------------------------*/
+.body_home {
+    background-image: url(../assets/backgrounds/background0.png);
+}
+
+.home_main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem auto 10rem;
+    background-color: $fondo-blanco-transparente;
+
+    &__titulo {
+            background-color: $fondo-titulos;
+            font-family: $fuente-txt-1;
+            font-weight: 600;
+            text-align: center;
+            border-top: $borde-titulos;
+            border-bottom: $borde-titulos;
+    }
+    &__txt {
+        margin: 5rem 5rem;
+        text-align: center;
+    }
+    
+    img {
+        width: 44rem;
+        margin: auto;
+        display: block;
+        box-shadow: $sombra-size-1;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+       
+    &__btn {
+        text-align: center;
+        margin: 5rem auto;
+            a {
+                display: inline-block;
+                position: relative;
+                background-color: $marron;
+                color: white;
+                border-radius: 5%;
+                padding: 1rem 2rem;
+                box-shadow: $sombra-size-1;
+                transition: all 0.3s ease-in-out;
+            }
+            a:hover {
+                transform: scale(1.05);
+                box-shadow: $sombra-size-2;
+                color: black;
+                background-color: wheat;
+            }
+    }
+}
+
+/*<---------------- Seccion A ---------------->*/
+/*<--- Tipos de sabores --->*/
+
+.home_productos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10rem auto;
+    background-color: $fondo-blanco-transparente;
+    &__titulo {
+        margin-bottom: 2rem;
+        background-color: $fondo-titulos;
+        font-family: $fuente-txt-1;
+        text-align: center;
+        border-top: $borde-titulos;
+        border-bottom: $borde-titulos;
+        
+    }
+    &__txt {
+        margin: 5rem 5rem;
+        text-align: center;
+    }
+    &__imagenes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        h2 {
+            text-align: center;
+            font-family: $fuente-txt-1;
+        }
+        img {
+            width: 14rem;
+            background-color: white;
+            border-radius: 10%;
+            box-shadow: $sombra-size-1;
+            margin-top: 1rem;
+            transition: all 0.3s ease-in-out;
+        }
+    }  
+    &__cremas img:hover {
+        transform: scale(1.05);
+        box-shadow: $sombra-size-3 wheat;
+    }
+    &__chocolates img:hover {
+        transform: scale(1.05);
+        box-shadow: $sombra-size-3 rgb(91, 59, 16);
+    }
+    &__ddl img:hover {
+        transform: scale(1.05);
+        box-shadow: $sombra-size-3 burlywood;
+    }
+
+    &__btn {
+        text-align: center;
+        margin: 5rem auto;
+            a {
+                display: inline-block;
+                position: relative;
+                background-color: $marron;
+                color: white;
+                border-radius: 5%;
+                padding: 1rem 2rem;
+                box-shadow: $sombra-size-1;
+                transition: all 0.3s ease-in-out;
+            }
+            a:hover {
+                transform: scale(1.05);
+                box-shadow: $sombra-size-2;
+                color: black;
+                background-color: wheat;
+                }   
+            }
+}
+/*<---------------- Seccion B ---------------->*/
+/*<--- Preparacion con video --->*/
+
+.home_preparacion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10rem auto;
+    background-color: $fondo-blanco-transparente;
+    &__titulo {
+            margin-bottom: 2rem;
+            background-color: $fondo-titulos;
+            font-family: $fuente-txt-1;
+            text-align: center;
+            border-top: $borde-titulos;
+            border-bottom: $borde-titulos;
+    }  
+    &__txt {
+        margin: 5rem 5rem;
+        text-align: center;
+    }
+    &__video video {
+        width: 44rem;
+        display: block;
+        object-fit: contain;
+        margin: 5rem auto;
+        box-shadow: $sombra-size-1;
+    }
+}

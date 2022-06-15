@@ -1,0 +1,43 @@
+/*<------------------- COMIENZO - GALERIA ------------------->*/
+.body_galeria {
+    background-image: url(../assets/backgrounds/background5.png);   
+}
+.galeria_main {
+    width: 100%;
+    background-color: $fondo-blanco-transparente;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5rem auto 10rem;
+    &__titulo {
+        width: 100%;
+        background-color: $fondo-titulos;
+        color: black;
+        font-family: $fuente-txt-1;
+        text-align: center;
+        font-size: 4rem;
+        margin-bottom: 5rem;
+        border-top: $borde-titulos;
+        border-bottom: $borde-titulos;
+    }
+    &__imagenes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        width: 95%;
+        margin: 0rem auto 10rem;
+        padding: 40px 0;
+        grid-gap: 10px;
+        img {
+            vertical-align: top;
+            width: 100%;
+            box-shadow: $sombra-size-0;
+            opacity: 0.9;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.03);
+                opacity: 1;
+            }
+        }
+    }
+}
