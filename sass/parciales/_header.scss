@@ -10,11 +10,11 @@
     .navbar-nav {
         margin: 0 2rem;
         font-size: 1.2rem;
-        transition: all 0.3s ease-in-out;
+        transition: transicion-zoom;
 
         :hover {
-            transform: scale(1.01);
-            color: rgb(95, 35, 35);
+            transform: $escala-1per;
+            color: $bordo;
             font-weight: 600;
         }
         .nav-item {
@@ -46,14 +46,14 @@
 
 .header-txt{
     position: absolute;
-    font-family: 'Caveat', cursive;
+    font-family: $fuente-txt-1;
     font-size: 1.6rem;
     color: black;
     top: 8rem;
     left: 20rem;
 
     span {
-        color: rgb(95, 35, 35);
+        color: $bordo;
         font-weight: 600;
     }
 }

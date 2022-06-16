@@ -25,46 +25,41 @@
         align-items: center;
         justify-content: space-around;
         margin-bottom: 15rem;
-    }
-    &__botones a {
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    &__botones a {
-        cursor: pointer;
-        background-size: cover;
-        color: white;
-        border-radius: $borde-radio-1;
-        margin-top: 3rem;
-        font-family: $fuente-txt-1;
-        font-size: 3rem;
-        font-weight: 600;
-        font-style: italic;
-        text-shadow: $sombra-size-0;
-        box-shadow: $sombra-size-0;
-        transition: $transicion-zoom;
-        &:hover {
-            transform: $escala-10per;
-            box-shadow: $sombra-size-2;
-            color: wheat;
+        a {
+           cursor: pointer;
+           display: flex;
+           flex-wrap: nowrap;
+           background-size: cover;
+           color: white;
+           border-radius: $borde-radio-1;
+           margin-top: 3rem;
+           font-family: $fuente-txt-1;
+           font-size: 3rem;
+           font-weight: 600;
+           font-style: italic;
+           text-shadow: $sombra-size-0;
+           box-shadow: $sombra-size-0;
+           transition: $transicion-zoom;
+           &:hover {
+               transform: $escala-10per;
+               box-shadow: $sombra-size-2;
+               color: wheat;
+           }
+        }
+        &__cremas {
+            background-image: url(../assets/home_imagenes/cremas.png);
+            padding: 10rem 8rem;
+        }
+        &__chocolates {
+            background-image: url(../assets/home_imagenes/chocolate.png);
+            padding: 10rem 6.5rem;
+        }
+        
+        &__leche{
+            background-image: url(../assets/home_imagenes/ddl.png);
+            padding: 10rem 4.3rem;
         }
     }
-}
-
-.btn_cremas {
-    background-image: url(../assets/home_imagenes/cremas.png);
-    padding: 10rem 8rem;
-}
-
-
-.btn_chocolates {
-    background-image: url(../assets/home_imagenes/chocolate.png);
-    padding: 10rem 6.5rem;
-}
-
-.btn_leche {
-    background-image: url(../assets/home_imagenes/ddl.png);
-    padding: 10rem 4.3rem;
 }
 
 table {

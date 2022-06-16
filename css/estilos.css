@@ -42,7 +42,7 @@ p {
   .navbar .navbar-nav {
     margin: 0 2rem;
     font-size: 1.2rem;
-    transition: all 0.3s ease-in-out; }
+    transition: transicion-zoom; }
     .navbar .navbar-nav :hover {
       transform: scale(1.01);
       color: #5f2323;
@@ -66,7 +66,7 @@ p {
 
 .header-txt {
   position: absolute;
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
   font-size: 1.6rem;
   color: black;
   top: 8rem;
@@ -323,38 +323,34 @@ p {
     align-items: center;
     justify-content: space-around;
     margin-bottom: 15rem; }
-  .sabores_main__botones a {
-    display: flex;
-    flex-wrap: nowrap; }
-  .sabores_main__botones a {
-    cursor: pointer;
-    background-size: cover;
-    color: white;
-    border-radius: 3%;
-    margin-top: 3rem;
-    font-family: "Caveat", cursive;
-    font-size: 3rem;
-    font-weight: 600;
-    font-style: italic;
-    text-shadow: 0px 0px 5px black;
-    box-shadow: 0px 0px 5px black;
-    transition: all 0.3s ease-in-out; }
-    .sabores_main__botones a:hover {
-      transform: scale(1.1);
-      box-shadow: 0px 0px 15px black;
-      color: wheat; }
-
-.btn_cremas {
-  background-image: url(../assets/home_imagenes/cremas.png);
-  padding: 10rem 8rem; }
-
-.btn_chocolates {
-  background-image: url(../assets/home_imagenes/chocolate.png);
-  padding: 10rem 6.5rem; }
-
-.btn_leche {
-  background-image: url(../assets/home_imagenes/ddl.png);
-  padding: 10rem 4.3rem; }
+    .sabores_main__botones a {
+      cursor: pointer;
+      display: flex;
+      flex-wrap: nowrap;
+      background-size: cover;
+      color: white;
+      border-radius: 3%;
+      margin-top: 3rem;
+      font-family: "Caveat", cursive;
+      font-size: 3rem;
+      font-weight: 600;
+      font-style: italic;
+      text-shadow: 0px 0px 5px black;
+      box-shadow: 0px 0px 5px black;
+      transition: all 0.3s ease-in-out; }
+      .sabores_main__botones a:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 15px black;
+        color: wheat; }
+    .sabores_main__botones__cremas {
+      background-image: url(../assets/home_imagenes/cremas.png);
+      padding: 10rem 8rem; }
+    .sabores_main__botones__chocolates {
+      background-image: url(../assets/home_imagenes/chocolate.png);
+      padding: 10rem 6.5rem; }
+    .sabores_main__botones__leche {
+      background-image: url(../assets/home_imagenes/ddl.png);
+      padding: 10rem 4.3rem; }
 
 table {
   margin: 2rem auto; }
@@ -488,15 +484,15 @@ table {
 
 /*------------------------ MEDIA QUERIES ------------------------*/
 @media (max-width: 1200px) {
-  .sabores_main_botones {
+  .sabores_main__botones {
     display: flex;
     flex-direction: row; }
-  .btn_cremas {
-    padding: 7rem 7rem; }
-  .btn_chocolates {
-    padding: 7rem 6rem; }
-  .btn_leche {
-    padding: 7rem 4rem; } }
+    .sabores_main__botones__cremas {
+      padding: 7rem 7rem; }
+    .sabores_main__botones__chocolates {
+      padding: 7rem 6rem; }
+    .sabores_main__botones__leche {
+      padding: 7rem 4rem; } }
 
 @media (max-width: 992px) {
   .header-txt {
@@ -505,8 +501,8 @@ table {
     display: flex;
     flex-direction: row;
     justify-content: center; }
-  .header-red {
-    margin: 2rem 0.5rem; } }
+    .header-redes .header-red img {
+      margin: 1.5rem 0.5rem; } }
 
 @media (max-width: 768px) {
   h1 {
@@ -521,39 +517,39 @@ table {
     width: 12rem;
     margin: 1rem; }
   /*------------ home ------------*/
-  .home_main_img img {
+  .home_main__img img {
     width: 95%; }
-  .home_main_txt {
+  .home_main__txt {
     margin: 3rem 1rem; }
-  .home_productos_imagenes img {
+  .home_productos__imagenes img {
     width: 12rem; }
-  .home_productos_txt {
+  .home_productos__txt {
     margin: 3rem 1rem; }
-  .home_preparacion_video video {
+  .home_preparacion__video video {
     width: 95%; }
-  .home_preparacion_txt {
+  .home_preparacion__txt {
     margin: 3rem 1rem; }
   /*------------ Historia ------------*/
-  .historia_main_titulo {
+  .historia_main__titulo {
     margin: 0; }
-  .historia_main_img img {
+  .historia_main__img img {
     width: 95%; }
-  .historia_main_txt {
+  .historia_main__txt {
     margin: 3rem 1rem; }
-  .historia_seccion_img img {
+  .historia_seccion__img img {
     width: 95%; }
-  .historia_seccion_txt {
+  .historia_seccion__txt {
     margin: 3rem 1rem; }
   /*------------ Sabores ------------*/
-  .sabores_main_botones {
+  .sabores_main__botones {
     display: flex;
     flex-direction: column; }
-  .btn_cremas {
-    padding: 7rem 6.5rem; }
-  .btn_chocolates {
-    padding: 7rem 5rem; }
-  .btn_leche {
-    padding: 7rem 2.9rem; }
+    .sabores_main__botones__cremas {
+      padding: 7rem 6.5rem; }
+    .sabores_main__botones__chocolates {
+      padding: 7rem 5rem; }
+    .sabores_main__botones__leche {
+      padding: 7rem 2.9rem; }
   .listado_sabores li {
     font-size: 1.2rem; }
   .sabores_secciona {
@@ -563,18 +559,18 @@ table {
   .sabores_seccionc {
     width: 90%; }
   /*------------ Contactos ------------*/
-  .contactos_main_txt {
+  .contactos_main__txt {
     margin: 0 2rem; }
-  .formulario {
+  .contactos_main__formulario {
     width: 100%;
     font-size: 1.2rem;
     justify-items: center;
     margin-left: 0.7rem; }
-  .newslatter_txt {
+  .contactos_main__newslatter_txt {
     font-size: 1.1rem; }
-  .field {
+  .contactos_main__field {
     width: 95%; }
-  .form_boton {
+  .contactos_main__form_boton {
     width: 95%;
     justify-items: center; } }
 
@@ -588,52 +584,52 @@ table {
   p {
     font-size: 1.1rem; }
   /*------------ footer ------------*/
-  footer {
+  .footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 2rem;
     text-align: center; }
-  .footer_logo {
-    width: 100%;
-    margin: 3rem auto 1rem; }
-  .footer_logo img {
-    margin: auto; }
-  .footer_redes {
-    width: 100%;
-    grid-row: 2;
-    margin: 1rem auto; }
-  .footer_copyright {
-    width: 100%;
-    grid-row: 3;
-    text-align: center; }
-  .footer_copyright p {
-    font-size: 0.9rem; }
+    .footer__logo {
+      width: 100%;
+      margin: 3rem auto 1rem; }
+      .footer__logo img {
+        margin: auto; }
+    .footer__redes {
+      width: 100%;
+      grid-row: 2;
+      margin: 1rem auto; }
+    .footer__copyright {
+      width: 100%;
+      grid-row: 3;
+      text-align: center; }
+      .footer__copyright p {
+        font-size: 0.9rem; }
   /*------------ home------------*/
-  .home_productos_imagenes {
+  .home_productos__imagenes {
     display: flex;
     flex-direction: column;
     text-align: center; }
   /*------------ Sabores ------------*/
-  .sabores_main_botones a {
+  .sabores_main__botones a {
     font-size: 2rem; }
-  .btn_cremas {
+  .sabores_main__botones__cremas {
     padding: 6rem 20%; }
-  .btn_chocolates {
+  .sabores_main__botones__chocolates {
     padding: 6rem 16%; }
-  .btn_leche {
+  .sabores_main__botones__leche {
     padding: 6rem 10.5%; }
   .listado_sabores li {
     font-size: 1.1rem; }
-  .galeria_main_titulo {
+  .galeria_main__titulo {
     margin-bottom: 0; }
-  .galeria_imagenes {
+  .galeria_main__imagenes {
     display: flex;
     flex-direction: column; }
   /*------------ Contactos ------------*/
-  .formulario {
+  .contactos_main__formulario {
     width: 100%;
     font-size: 1.1rem;
     justify-items: center;
     margin-left: 0.7rem; }
-  .newslatter_txt {
+  .contactos_main__newslatter_txt {
     font-size: 1rem; } }
