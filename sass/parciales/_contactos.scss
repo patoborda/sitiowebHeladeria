@@ -10,7 +10,7 @@
    align-items: center;
    justify-content: space-between;
    background-color:$fondo-blanco-transparente;
-   margin: 5rem auto 10rem;
+   margin: $margin-5r-auto-10r;
    &__titulo {
        width: 100%;
        font-family: $fuente-txt-1;
@@ -36,7 +36,7 @@
        font-family: $fuente-txt-2;
        font-size: 1.1rem;
        outline: none;
-       border: 1px solid $gris;
+       border: $borde-1px-solid $gris;
        border-radius: 0.25rem;
    }
    &__newslatter_txt {
@@ -44,7 +44,7 @@
    }
    &__form_boton {
        cursor: pointer;
-       background-color: $marron;
+       background-color: $bordo;
        color: white;
        padding: 0.5rem;
        margin-top: 0.5rem;
@@ -54,9 +54,9 @@
        font-weight: 600;
        border: none;
        box-shadow: $sombra-size-0;
-       transition: all 0.3s ease-in-out;
+       transition: $transicion-zoom;
        &:hover {
-           transform: scale(1.01);
+           transform: $escala-1per;
            box-shadow: $sombra-size-1;
            color: black;
            background-color: wheat;

@@ -9,7 +9,7 @@ body {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  font-family: 'Kanit', sans-serif; }
+  font-family: "Kanit", sans-serif; }
 
 a {
   color: black;
@@ -156,10 +156,10 @@ p {
 /*<---------------- Seccion A ---------------->*/
 /*<--- Tipos de sabores --->*/
 .home_productos {
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100%;
   margin: 10rem auto;
   background-color: rgba(255, 255, 255, 0.9); }
   .home_productos__titulo {
@@ -379,8 +379,8 @@ table {
   background-color: rgba(255, 255, 255, 0.9);
   width: 40rem;
   margin: 15rem auto;
-  border: 1px solid #3b2609;
-  border-top: 10px solid #3b2609; }
+  border: 1px solid #5b3b10;
+  border-top: 10px solid #5b3b10; }
 
 .sabores_seccionc {
   background-color: rgba(255, 255, 255, 0.9);
@@ -413,15 +413,15 @@ table {
     border-top: 10px solid #5f2323;
     border-bottom: 10px solid #5f2323; }
   .galeria_main__imagenes {
+    width: 95%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    width: 95%;
     margin: 0rem auto 10rem;
     padding: 40px 0;
     grid-gap: 10px; }
     .galeria_main__imagenes img {
-      vertical-align: top;
       width: 100%;
+      vertical-align: top;
       box-shadow: 0px 0px 5px black;
       opacity: 0.9;
       transition: all 0.3s ease-in-out; }
@@ -485,3 +485,155 @@ table {
       box-shadow: 0px 0px 10px black;
       color: black;
       background-color: wheat; }
+
+/*------------------------ MEDIA QUERIES ------------------------*/
+@media (max-width: 1200px) {
+  .sabores_main_botones {
+    display: flex;
+    flex-direction: row; }
+  .btn_cremas {
+    padding: 7rem 7rem; }
+  .btn_chocolates {
+    padding: 7rem 6rem; }
+  .btn_leche {
+    padding: 7rem 4rem; } }
+
+@media (max-width: 992px) {
+  .header-txt {
+    display: none; }
+  .header-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .header-red {
+    margin: 2rem 0.5rem; } }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem; }
+  h2 {
+    font-size: 2.5rem; }
+  h3 {
+    font-size: 2rem; }
+  p {
+    font-size: 1.2rem; }
+  .header-logo {
+    width: 12rem;
+    margin: 1rem; }
+  /*------------ home ------------*/
+  .home_main_img img {
+    width: 95%; }
+  .home_main_txt {
+    margin: 3rem 1rem; }
+  .home_productos_imagenes img {
+    width: 12rem; }
+  .home_productos_txt {
+    margin: 3rem 1rem; }
+  .home_preparacion_video video {
+    width: 95%; }
+  .home_preparacion_txt {
+    margin: 3rem 1rem; }
+  /*------------ Historia ------------*/
+  .historia_main_titulo {
+    margin: 0; }
+  .historia_main_img img {
+    width: 95%; }
+  .historia_main_txt {
+    margin: 3rem 1rem; }
+  .historia_seccion_img img {
+    width: 95%; }
+  .historia_seccion_txt {
+    margin: 3rem 1rem; }
+  /*------------ Sabores ------------*/
+  .sabores_main_botones {
+    display: flex;
+    flex-direction: column; }
+  .btn_cremas {
+    padding: 7rem 6.5rem; }
+  .btn_chocolates {
+    padding: 7rem 5rem; }
+  .btn_leche {
+    padding: 7rem 2.9rem; }
+  .listado_sabores li {
+    font-size: 1.2rem; }
+  .sabores_secciona {
+    width: 90%; }
+  .sabores_seccionb {
+    width: 90%; }
+  .sabores_seccionc {
+    width: 90%; }
+  /*------------ Contactos ------------*/
+  .contactos_main_txt {
+    margin: 0 2rem; }
+  .formulario {
+    width: 100%;
+    font-size: 1.2rem;
+    justify-items: center;
+    margin-left: 0.7rem; }
+  .newslatter_txt {
+    font-size: 1.1rem; }
+  .field {
+    width: 95%; }
+  .form_boton {
+    width: 95%;
+    justify-items: center; } }
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.5rem; }
+  h2 {
+    font-size: 2rem; }
+  h3 {
+    font-size: 1.5rem; }
+  p {
+    font-size: 1.1rem; }
+  /*------------ footer ------------*/
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2rem;
+    text-align: center; }
+  .footer_logo {
+    width: 100%;
+    margin: 3rem auto 1rem; }
+  .footer_logo img {
+    margin: auto; }
+  .footer_redes {
+    width: 100%;
+    grid-row: 2;
+    margin: 1rem auto; }
+  .footer_copyright {
+    width: 100%;
+    grid-row: 3;
+    text-align: center; }
+  .footer_copyright p {
+    font-size: 0.9rem; }
+  /*------------ home------------*/
+  .home_productos_imagenes {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  /*------------ Sabores ------------*/
+  .sabores_main_botones a {
+    font-size: 2rem; }
+  .btn_cremas {
+    padding: 6rem 20%; }
+  .btn_chocolates {
+    padding: 6rem 16%; }
+  .btn_leche {
+    padding: 6rem 10.5%; }
+  .listado_sabores li {
+    font-size: 1.1rem; }
+  .galeria_main_titulo {
+    margin-bottom: 0; }
+  .galeria_imagenes {
+    display: flex;
+    flex-direction: column; }
+  /*------------ Contactos ------------*/
+  .formulario {
+    width: 100%;
+    font-size: 1.1rem;
+    justify-items: center;
+    margin-left: 0.7rem; }
+  .newslatter_txt {
+    font-size: 1rem; } }

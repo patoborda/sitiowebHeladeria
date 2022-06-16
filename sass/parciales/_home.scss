@@ -7,7 +7,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 5rem auto 10rem;
+    margin: $margin-5r-auto-10r;
     background-color: $fondo-blanco-transparente;
 
     &__titulo {
@@ -38,15 +38,15 @@
             a {
                 display: inline-block;
                 position: relative;
-                background-color: $marron;
+                background-color: $bordo;
                 color: white;
-                border-radius: 5%;
+                border-radius: $borde-radio-2;
                 padding: 1rem 2rem;
                 box-shadow: $sombra-size-1;
-                transition: all 0.3s ease-in-out;
+                transition: $transicion-zoom;
             }
             a:hover {
-                transform: scale(1.05);
+                transform: $escala-5per;
                 box-shadow: $sombra-size-2;
                 color: black;
                 background-color: wheat;
@@ -58,10 +58,10 @@
 /*<--- Tipos de sabores --->*/
 
 .home_productos {
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
     margin: 10rem auto;
     background-color: $fondo-blanco-transparente;
     &__titulo {
@@ -89,23 +89,23 @@
         img {
             width: 14rem;
             background-color: white;
-            border-radius: 10%;
+            border-radius: $borde-radio-4;
             box-shadow: $sombra-size-1;
             margin-top: 1rem;
-            transition: all 0.3s ease-in-out;
+            transition: $transicion-zoom;
         }
     }  
     &__cremas img:hover {
-        transform: scale(1.05);
-        box-shadow: $sombra-size-3 wheat;
+        transform: $escala-5per;
+        box-shadow: $sombra-size-3 $crema;
     }
     &__chocolates img:hover {
-        transform: scale(1.05);
-        box-shadow: $sombra-size-3 rgb(91, 59, 16);
+        transform: $escala-5per;
+        box-shadow: $sombra-size-3 $chocolate;
     }
     &__ddl img:hover {
-        transform: scale(1.05);
-        box-shadow: $sombra-size-3 burlywood;
+        transform: $escala-5per;
+        box-shadow: $sombra-size-3 $dulce-de-leche;
     }
 
     &__btn {
@@ -114,15 +114,15 @@
             a {
                 display: inline-block;
                 position: relative;
-                background-color: $marron;
+                background-color: $bordo;
                 color: white;
-                border-radius: 5%;
+                border-radius: $borde-radio-2;
                 padding: 1rem 2rem;
                 box-shadow: $sombra-size-1;
-                transition: all 0.3s ease-in-out;
+                transition: $transicion-zoom;
             }
             a:hover {
-                transform: scale(1.05);
+                transform: $escala-5per;
                 box-shadow: $sombra-size-2;
                 color: black;
                 background-color: wheat;

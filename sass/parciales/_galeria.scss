@@ -9,7 +9,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 5rem auto 10rem;
+    margin: $margin-5r-auto-10r;
     &__titulo {
         width: 100%;
         background-color: $fondo-titulos;
@@ -22,20 +22,20 @@
         border-bottom: $borde-titulos;
     }
     &__imagenes {
+        width: 95%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        width: 95%;
         margin: 0rem auto 10rem;
         padding: 40px 0;
         grid-gap: 10px;
         img {
-            vertical-align: top;
             width: 100%;
+            vertical-align: top;
             box-shadow: $sombra-size-0;
             opacity: 0.9;
-            transition: all 0.3s ease-in-out;
+            transition: $transicion-zoom;
             &:hover {
-                transform: scale(1.03);
+                transform: $escala-3per;
                 opacity: 1;
             }
         }

@@ -6,7 +6,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 5rem auto 10rem;
+    margin: $margin-5r-auto-10r ;
     background-color: $fondo-blanco-transparente;
     &__titulo {
         background-color: $fondo-titulos;
@@ -34,7 +34,7 @@
         cursor: pointer;
         background-size: cover;
         color: white;
-        border-radius: 3%;
+        border-radius: $borde-radio-1;
         margin-top: 3rem;
         font-family: $fuente-txt-1;
         font-size: 3rem;
@@ -42,9 +42,9 @@
         font-style: italic;
         text-shadow: $sombra-size-0;
         box-shadow: $sombra-size-0;
-        transition: all 0.3s ease-in-out;
+        transition: $transicion-zoom;
         &:hover {
-            transform: scale(1.1);
+            transform: $escala-10per;
             box-shadow: $sombra-size-2;
             color: wheat;
         }
@@ -87,8 +87,8 @@ table {
     background-color: $fondo-blanco-transparente;
     width: 40rem;
     margin: 15rem auto;
-    border: 1px solid wheat;
-    border-top: 10px solid wheat;
+    border: $borde-1px-solid $crema;
+    border-top: $borde-10px-solid $crema;
 }
 
 
@@ -96,8 +96,8 @@ table {
     background-color: $fondo-blanco-transparente;
     width: 40rem;
     margin: 15rem auto;
-    border: 1px solid rgb(59, 38, 9);
-    border-top: 10px solid rgb(59, 38, 9);
+    border: $borde-1px-solid $chocolate;
+    border-top: $borde-10px-solid $chocolate;
 }
 
 
@@ -105,8 +105,8 @@ table {
     background-color: $fondo-blanco-transparente;
     width: 40rem;
     margin: 15rem auto;
-    border: 1px solid burlywood;
-    border-top: 10px solid burlywood;
+    border: $borde-1px-solid $dulce-de-leche;
+    border-top: $borde-10px-solid $dulce-de-leche;
 }
 
 /* FIN PAGINA SABORES */
