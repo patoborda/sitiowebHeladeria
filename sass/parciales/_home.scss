@@ -4,19 +4,15 @@
 }
 
 .home_main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    @include flex-col;
     margin: $margin-5r-auto-10r;
-    background-color: $fondo-blanco-transparente;
+    background-color: map-get($colores,"blanco-transparente");
 
     &__titulo {
-            background-color: $fondo-titulos;
-            font-family: $fuente-txt-1;
-            font-weight: 600;
-            text-align: center;
-            border-top: $borde-titulos;
-            border-bottom: $borde-titulos;
+            width: 100%;
+            @include titulo-caveat-bordes;
+            background-color: map-get($colores,"crema-claro");
+        
     }
     &__txt {
         margin: 5rem 5rem;
@@ -24,33 +20,11 @@
     }
     
     img {
-        width: 44rem;
-        margin: auto;
-        display: block;
-        box-shadow: $sombra-size-1;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+       @include img-centrada-sombra;
     }
        
     &__btn {
-        text-align: center;
-        margin: 5rem auto;
-            a {
-                display: inline-block;
-                position: relative;
-                background-color: $bordo;
-                color: white;
-                border-radius: $borde-radio-2;
-                padding: 1rem 2rem;
-                box-shadow: $sombra-size-1;
-                transition: $transicion-zoom;
-            }
-            a:hover {
-                transform: $escala-5per;
-                box-shadow: $sombra-size-2;
-                color: black;
-                background-color: wheat;
-            }
+        @include btn-hover 
     }
 }
 
@@ -58,30 +32,20 @@
 /*<--- Tipos de sabores --->*/
 
 .home_productos {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    @include flex-col-evenly;
     margin: 10rem auto;
-    background-color: $fondo-blanco-transparente;
+    background-color: map-get($colores,"blanco-transparente");
     &__titulo {
+        @include titulo-caveat-bordes; 
+        background-color: map-get($colores,"crema-claro");
         margin-bottom: 2rem;
-        background-color: $fondo-titulos;
-        font-family: $fuente-txt-1;
-        text-align: center;
-        border-top: $borde-titulos;
-        border-bottom: $borde-titulos;
-        
     }
     &__txt {
         margin: 5rem 5rem;
         text-align: center;
     }
     &__imagenes {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        @include flex-row-evenly;
         h2 {
             text-align: center;
             font-family: $fuente-txt-1;
@@ -89,63 +53,41 @@
         img {
             width: 14rem;
             background-color: white;
-            border-radius: $borde-radio-4;
-            box-shadow: $sombra-size-1;
+            border-radius: map-get($bordes , radio-4);
+            box-shadow: map-get($sombra, size-1);
             margin-top: 1rem;
             transition: $transicion-zoom;
         }
     }  
     &__cremas img:hover {
         transform: $escala-5per;
-        box-shadow: $sombra-size-3 $crema;
+        box-shadow: map-get($sombra, size-3) map-get($colores,"crema");
     }
     &__chocolates img:hover {
         transform: $escala-5per;
-        box-shadow: $sombra-size-3 $chocolate;
+        box-shadow: map-get($sombra, size-3) map-get($colores,"chocolate");
     }
     &__ddl img:hover {
         transform: $escala-5per;
-        box-shadow: $sombra-size-3 $dulce-de-leche;
+        box-shadow: map-get($sombra, size-3) map-get($colores,"dulce-de-leche");
     }
 
     &__btn {
-        text-align: center;
-        margin: 5rem auto;
-            a {
-                display: inline-block;
-                position: relative;
-                background-color: $bordo;
-                color: white;
-                border-radius: $borde-radio-2;
-                padding: 1rem 2rem;
-                box-shadow: $sombra-size-1;
-                transition: $transicion-zoom;
+        @include btn-hover
             }
-            a:hover {
-                transform: $escala-5per;
-                box-shadow: $sombra-size-2;
-                color: black;
-                background-color: wheat;
-                }   
-            }
+            
 }
 /*<---------------- Seccion B ---------------->*/
 /*<--- Preparacion con video --->*/
 
 .home_preparacion {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-col-center;
     margin: 10rem auto;
-    background-color: $fondo-blanco-transparente;
+    background-color: map-get($colores,"blanco-transparente");
     &__titulo {
             margin-bottom: 2rem;
-            background-color: $fondo-titulos;
-            font-family: $fuente-txt-1;
-            text-align: center;
-            border-top: $borde-titulos;
-            border-bottom: $borde-titulos;
+            background-color: map-get($colores,"crema-claro");
+            @include titulo-caveat-bordes  
     }  
     &__txt {
         margin: 5rem 5rem;
@@ -156,6 +98,6 @@
         display: block;
         object-fit: contain;
         margin: 5rem auto;
-        box-shadow: $sombra-size-1;
+        box-shadow: map-get($sombra, size-1);
     }
 }

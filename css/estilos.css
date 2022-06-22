@@ -112,23 +112,23 @@ p {
 .body_home {
   background-image: url(../assets/backgrounds/background0.png); }
 
-.home_main {
+.home_main, .sabores_main {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin: 5rem auto 10rem;
   background-color: rgba(255, 255, 255, 0.9); }
-  .home_main__titulo {
-    background-color: rgba(245, 222, 179, 0.5);
+  .home_main__titulo, .sabores_main__titulo {
+    width: 100%;
     font-family: "Caveat", cursive;
-    font-weight: 600;
     text-align: center;
     border-top: 10px solid #5f2323;
-    border-bottom: 10px solid #5f2323; }
+    border-bottom: 10px solid #5f2323;
+    background-color: rgba(245, 222, 179, 0.5); }
   .home_main__txt {
     margin: 5rem 5rem;
     text-align: center; }
-  .home_main img {
+  .home_main img, .sabores_main img {
     width: 44rem;
     margin: auto;
     display: block;
@@ -159,23 +159,23 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
   margin: 10rem auto;
   background-color: rgba(255, 255, 255, 0.9); }
   .home_productos__titulo {
-    margin-bottom: 2rem;
-    background-color: rgba(245, 222, 179, 0.5);
     font-family: "Caveat", cursive;
     text-align: center;
     border-top: 10px solid #5f2323;
-    border-bottom: 10px solid #5f2323; }
+    border-bottom: 10px solid #5f2323;
+    background-color: rgba(245, 222, 179, 0.5);
+    margin-bottom: 2rem; }
   .home_productos__txt {
     margin: 5rem 5rem;
     text-align: center; }
   .home_productos__imagenes {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly; }
     .home_productos__imagenes h2 {
       text-align: center;
@@ -251,23 +251,22 @@ p {
   margin: 5rem auto;
   background-color: rgba(255, 255, 255, 0.9); }
   .historia_main__titulo {
-    background-color: rgba(245, 222, 179, 0.5);
     font-family: "Caveat", cursive;
     text-align: center;
-    margin-bottom: 2rem;
     border-top: 10px solid #5f2323;
-    border-bottom: 10px solid #5f2323; }
+    border-bottom: 10px solid #5f2323;
+    background-color: rgba(245, 222, 179, 0.5);
+    margin-bottom: 2rem; }
   .historia_main__txt {
     margin: 5rem 5rem;
     text-align: center; }
-  .historia_main__img {
+  .historia_main img {
+    width: 44rem;
+    margin: auto;
+    display: block;
+    box-shadow: 0px 0px 10px black;
     margin-top: 3rem;
-    margin-bottom: 10rem; }
-    .historia_main__img img {
-      width: 44rem;
-      margin: auto;
-      display: block;
-      box-shadow: 0px 0px 10px black; }
+    margin-bottom: 3rem; }
 
 .historia_seccion {
   width: 100%;
@@ -276,81 +275,63 @@ p {
   margin: 5rem auto;
   background-color: rgba(255, 255, 255, 0.9); }
   .historia_seccion__titulo {
-    background-color: rgba(245, 222, 179, 0.5);
-    text-align: center;
     font-family: "Caveat", cursive;
-    margin-bottom: 2rem;
+    text-align: center;
     border-top: 10px solid #5f2323;
-    border-bottom: 10px solid #5f2323; }
+    border-bottom: 10px solid #5f2323;
+    background-color: rgba(245, 222, 179, 0.5);
+    margin-bottom: 2rem; }
   .historia_seccion__txt {
     margin: 5rem 5rem;
     text-align: center; }
-  .historia_seccion__img {
+  .historia_seccion img {
+    width: 44rem;
+    margin: auto;
+    display: block;
+    box-shadow: 0px 0px 10px black;
     margin-top: 3rem;
-    margin-bottom: 10rem; }
-    .historia_seccion__img img {
-      width: 44rem;
-      margin: auto;
-      display: block;
-      box-shadow: 0px 0px 15px black;
-      margin-top: 3rem;
-      margin-bottom: 3rem; }
+    margin-bottom: 3rem; }
 
 /* FIN PAGINA HISTORIA */
 /*<------------------- COMIENZO PAGINA - SABORES ------------------->*/
 .body_sabores {
   background-image: url(../assets/backgrounds/background2.png); }
 
-.sabores_main {
+.sabores_main__botones {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  margin: 5rem auto 10rem;
-  background-color: rgba(255, 255, 255, 0.9); }
-  .sabores_main__titulo {
-    background-color: rgba(245, 222, 179, 0.5);
-    text-align: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15rem; }
+  .sabores_main__botones a {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: nowrap;
+    background-size: cover;
+    color: white;
+    border-radius: 3%;
+    margin-top: 3rem;
     font-family: "Caveat", cursive;
     font-size: 3rem;
-    margin-bottom: 2rem;
-    border-top: 10px solid #5f2323;
-    border-bottom: 10px solid #5f2323; }
-  .sabores_main__botones {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 15rem; }
-    .sabores_main__botones a {
-      cursor: pointer;
-      display: flex;
-      flex-wrap: nowrap;
-      background-size: cover;
-      color: white;
-      border-radius: 3%;
-      margin-top: 3rem;
-      font-family: "Caveat", cursive;
-      font-size: 3rem;
-      font-weight: 600;
-      font-style: italic;
-      text-shadow: 0px 0px 5px black;
-      box-shadow: 0px 0px 5px black;
-      transition: all 0.3s ease-in-out; }
-      .sabores_main__botones a:hover {
-        transform: scale(1.1);
-        box-shadow: 0px 0px 15px black;
-        color: wheat; }
-    .sabores_main__botones__cremas {
-      background-image: url(../assets/home_imagenes/cremas.png);
-      padding: 10rem 8rem; }
-    .sabores_main__botones__chocolates {
-      background-image: url(../assets/home_imagenes/chocolate.png);
-      padding: 10rem 6.5rem; }
-    .sabores_main__botones__leche {
-      background-image: url(../assets/home_imagenes/ddl.png);
-      padding: 10rem 4.3rem; }
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px black;
+    transition: all 0.3s ease-in-out; }
+    .sabores_main__botones a:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 15px black;
+      color: wheat; }
+  .sabores_main__botones__cremas {
+    background-image: url(../assets/home_imagenes/cremas.png);
+    padding: 10rem 8rem; }
+  .sabores_main__botones__chocolates {
+    background-image: url(../assets/home_imagenes/chocolate.png);
+    padding: 10rem 6.5rem; }
+  .sabores_main__botones__leche {
+    background-image: url(../assets/home_imagenes/ddl.png);
+    padding: 10rem 4.3rem; }
 
 table {
   margin: 2rem auto; }
@@ -364,7 +345,7 @@ table {
   margin: 1rem 0;
   list-style: none; }
 
-.sabores_secciona {
+.sabores_secciona, .sabores_seccionb, .sabores_seccionc {
   background-color: rgba(255, 255, 255, 0.9);
   width: 40rem;
   margin: 15rem auto;
@@ -372,42 +353,32 @@ table {
   border-top: 10px solid wheat; }
 
 .sabores_seccionb {
-  background-color: rgba(255, 255, 255, 0.9);
-  width: 40rem;
-  margin: 15rem auto;
   border: 1px solid #5b3b10;
   border-top: 10px solid #5b3b10; }
 
 .sabores_seccionc {
-  background-color: rgba(255, 255, 255, 0.9);
-  width: 40rem;
-  margin: 15rem auto;
   border: 1px solid burlywood;
   border-top: 10px solid burlywood; }
 
 /* FIN PAGINA SABORES */
 /*<------------------- COMIENZO - GALERIA ------------------->*/
 .body_galeria {
-  background-image: url(../assets/backgrounds/background5.png); }
+  background-image: url(../assets/backgrounds/background3.png); }
 
 .galeria_main {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: space-between;
-  margin: 5rem auto 10rem; }
+  margin: 5rem auto 10rem;
+  background-color: rgba(255, 255, 255, 0.9); }
   .galeria_main__titulo {
-    width: 100%;
-    background-color: rgba(245, 222, 179, 0.5);
-    color: black;
     font-family: "Caveat", cursive;
     text-align: center;
-    font-size: 4rem;
-    margin-bottom: 5rem;
     border-top: 10px solid #5f2323;
-    border-bottom: 10px solid #5f2323; }
+    border-bottom: 10px solid #5f2323;
+    background-color: rgba(245, 222, 179, 0.5);
+    margin-bottom: 5rem; }
   .galeria_main__imagenes {
     width: 95%;
     display: grid;
@@ -427,25 +398,26 @@ table {
 
 /*<------------------- COMIENZO PAGINA - CONTACTOS ------------------->*/
 .body_contactos {
-  background-image: url(../assets/backgrounds/background6.png); }
+  background-image: url(../assets/backgrounds/background4.png); }
 
 .contactos_main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  margin: 5rem auto 10rem;
   background-color: rgba(255, 255, 255, 0.9);
-  margin: 5rem auto 10rem; }
+  align-items: center; }
   .contactos_main__titulo {
     width: 100%;
     font-family: "Caveat", cursive;
     text-align: center;
-    margin-bottom: 2rem;
-    background-color: rgba(245, 222, 179, 0.5);
     border-top: 10px solid #5f2323;
-    border-bottom: 10px solid #5f2323; }
+    border-bottom: 10px solid #5f2323;
+    margin-bottom: 2rem;
+    background-color: rgba(245, 222, 179, 0.5); }
   .contactos_main__formulario {
+    width: 100%;
     display: flex;
     flex-direction: column;
     width: 35rem;
@@ -552,7 +524,7 @@ table {
       padding: 7rem 2.9rem; }
   .listado_sabores li {
     font-size: 1.2rem; }
-  .sabores_secciona {
+  .sabores_secciona, .sabores_seccionb, .sabores_seccionc {
     width: 90%; }
   .sabores_seccionb {
     width: 90%; }

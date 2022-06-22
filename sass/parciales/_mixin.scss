@@ -1,0 +1,128 @@
+@mixin flex-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+@mixin flex-col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex-row-spacebtw {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+@mixin flex-col-spacebtw {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+@mixin flex-row-spacearo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+@mixin flex-col-spacearo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+}
+
+@mixin flex-col-evenly {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+}
+
+@mixin flex-row-evenly {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+}
+
+@mixin flex-col-center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+@mixin flex-row-center {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+@mixin titulo-caveat-bordes {
+    font-family: $fuente-txt-1;
+    text-align: center;
+    border-top: $borde-titulos;
+    border-bottom: $borde-titulos;
+    
+}
+
+@mixin btn-hover {
+        text-align: center;
+        margin: 5rem auto;
+            a {
+                display: inline-block;
+                position: relative;
+                background-color: map-get($colores,"bordo");
+                color: white;
+                border-radius: map-get($bordes , radio-2);
+                padding: 1rem 2rem;
+                box-shadow: map-get($sombra, size-1);
+                transition: $transicion-zoom;
+            }
+            a:hover {
+                transform: $escala-5per;
+                box-shadow: map-get($sombra, size-2);
+                color: black;
+                background-color: wheat;
+            }
+}
+
+@mixin img-centrada-sombra {
+    width: 44rem;
+    margin: auto;
+    display: block;
+    box-shadow: map-get($sombra, size-1);
+    margin-top: 3rem;
+    margin-bottom: 3rem; 
+}
+
+@mixin bloque-txt-img {
+    @include flex-col;
+    margin: 5rem auto;
+    background-color: map-get($colores,"blanco-transparente");
+    &__titulo {
+        @include titulo-caveat-bordes;
+        background-color: map-get($colores,"crema-claro");
+        margin-bottom: 2rem;
+       
+    }
+    &__txt {
+        margin: 5rem 5rem;
+        text-align: center;
+    }
+    
+    img {
+        @include img-centrada-sombra;
+        }
+}
+
+@mixin seccion {
+    background-color: map-get($colores,"blanco-transparente");
+    width: 40rem;
+    margin: 15rem auto;
+    border: $borde-1px-solid map-get($colores,"crema");
+    border-top: $borde-10px-solid map-get($colores,"crema");  
+}

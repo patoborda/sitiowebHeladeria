@@ -1,6 +1,6 @@
 /*<------------------- COMIENZO FOOTER------------------->*/
 .footer {
-    background-color: wheat;
+    background-color: map-get($colores,"crema");
     display: grid;
     grid-template-areas:
         "footer_logo footer_redes"

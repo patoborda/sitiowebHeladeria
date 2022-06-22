@@ -3,27 +3,14 @@
     background-image: url(../assets/backgrounds/background2.png);   
 }
 .sabores_main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: $margin-5r-auto-10r ;
-    background-color: $fondo-blanco-transparente;
+    //Utilice extend para copiar las propiedades de la clase .home_main del archivo _home.scss//
+    @extend .home_main;
     &__titulo {
-        background-color: $fondo-titulos;
-        text-align: center;
-        font-family: $fuente-txt-1;
-        font-size: 3rem;
-        margin-bottom: 2rem;
-        border-top: $borde-titulos;
-        border-bottom: $borde-titulos;
+        @extend .home_main__titulo;
     }
     &__botones {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        @include flex-row-spacearo;
         align-items: center;
-        justify-content: space-around;
         margin-bottom: 15rem;
         a {
            cursor: pointer;
@@ -31,19 +18,19 @@
            flex-wrap: nowrap;
            background-size: cover;
            color: white;
-           border-radius: $borde-radio-1;
+           border-radius: map-get($bordes , radio-1);
            margin-top: 3rem;
            font-family: $fuente-txt-1;
            font-size: 3rem;
            font-weight: 600;
            font-style: italic;
-           text-shadow: $sombra-size-0;
-           box-shadow: $sombra-size-0;
+           text-shadow: map-get($sombra, size-0);
+           box-shadow: map-get($sombra, size-0);
            transition: $transicion-zoom;
            &:hover {
-               transform: $escala-10per;
-               box-shadow: $sombra-size-2;
-               color: wheat;
+            transform: $escala-10per;
+                box-shadow: map-get($sombra, size-2);
+                color: wheat;
            }
         }
         &__cremas {
@@ -79,29 +66,22 @@ table {
 
 
 .sabores_secciona {
-    background-color: $fondo-blanco-transparente;
-    width: 40rem;
-    margin: 15rem auto;
-    border: $borde-1px-solid $crema;
-    border-top: $borde-10px-solid $crema;
+    @include seccion;
 }
 
-
 .sabores_seccionb {
-    background-color: $fondo-blanco-transparente;
-    width: 40rem;
-    margin: 15rem auto;
-    border: $borde-1px-solid $chocolate;
-    border-top: $borde-10px-solid $chocolate;
+    @extend .sabores_secciona;
+    border: $borde-1px-solid map-get($colores,"chocolate");
+    border-top: $borde-10px-solid map-get($colores,"chocolate"); 
+   
 }
 
 
 .sabores_seccionc {
-    background-color: $fondo-blanco-transparente;
-    width: 40rem;
-    margin: 15rem auto;
-    border: $borde-1px-solid $dulce-de-leche;
-    border-top: $borde-10px-solid $dulce-de-leche;
+    @extend .sabores_secciona;
+    border: $borde-1px-solid map-get($colores,"dulce-de-leche");
+    border-top: $borde-10px-solid map-get($colores,"dulce-de-leche"); 
+    
 }
 
 /* FIN PAGINA SABORES */

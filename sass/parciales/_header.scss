@@ -14,17 +14,14 @@
 
         :hover {
             transform: $escala-1per;
-            color: $bordo;
+            color: map-get($colores ,"bordo");
             font-weight: 600;
         }
         .nav-item {
             margin: 0 0.5rem;
         }
     }
-
 }
-
-
 .header-logo {
     margin: 2rem;
     width: 14rem;
@@ -53,7 +50,7 @@
     left: 20rem;
 
     span {
-        color: $bordo;
+        color: map-get($colores ,"bordo");
         font-weight: 600;
     }
 }

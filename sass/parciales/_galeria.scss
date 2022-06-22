@@ -1,25 +1,16 @@
 /*<------------------- COMIENZO - GALERIA ------------------->*/
 .body_galeria {
-    background-image: url(../assets/backgrounds/background5.png);   
+    background-image: url(../assets/backgrounds/background3.png);   
 }
 .galeria_main {
-    width: 100%;
-    background-color: $fondo-blanco-transparente;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include flex-col-spacebtw;
     margin: $margin-5r-auto-10r;
+    background-color: map-get($colores,"blanco-transparente");
     &__titulo {
-        width: 100%;
-        background-color: $fondo-titulos;
-        color: black;
-        font-family: $fuente-txt-1;
-        text-align: center;
-        font-size: 4rem;
+        @include titulo-caveat-bordes;
+        background-color: map-get($colores,"crema-claro");
         margin-bottom: 5rem;
-        border-top: $borde-titulos;
-        border-bottom: $borde-titulos;
+       
     }
     &__imagenes {
         width: 95%;
@@ -31,7 +22,7 @@
         img {
             width: 100%;
             vertical-align: top;
-            box-shadow: $sombra-size-0;
+            box-shadow: map-get($sombra, size-0);
             opacity: 0.9;
             transition: $transicion-zoom;
             &:hover {
