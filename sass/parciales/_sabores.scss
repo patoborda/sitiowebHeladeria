@@ -48,20 +48,21 @@
         }
     }
 }
-
-table {
-    margin: 2rem auto;
-}
-
 .sabores_secciones_titulos {
     text-align: center;
+    margin-bottom: 2rem;
     font-family: $fuente-txt-1;
 }
-
-.listado_sabores li {
-    font-size: 1.3rem;
-    margin: 1rem 0;
-    list-style: none;
+.listado_sabores {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
+    padding: 0;
+    li {
+       font-size: 1.3rem;
+       grid-column: 2/4;
+       margin: 8px
+   }
 }
 
 

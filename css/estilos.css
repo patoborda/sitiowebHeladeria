@@ -119,28 +119,27 @@ p {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 5rem auto 10rem;
+  margin: 5rem auto;
   background-color: rgba(255, 255, 255, 0.9); }
   .home_main__titulo, .sabores_main__titulo {
-    width: 100%;
     font-family: "Caveat", cursive;
     text-align: center;
     border-top: 10px solid #5f2323;
     border-bottom: 10px solid #5f2323;
-    background-color: rgba(245, 222, 179, 0.5); }
+    background-color: rgba(245, 222, 179, 0.5);
+    margin-bottom: 2rem; }
   .home_main__txt {
-    margin: 5rem 5rem;
+    margin: 2rem 5rem;
     text-align: center; }
   .home_main img, .sabores_main img {
     width: 44rem;
     margin: auto;
     display: block;
     box-shadow: 0px 0px 10px black;
-    margin-top: 3rem;
     margin-bottom: 3rem; }
   .home_main__btn {
     text-align: center;
-    margin: 5rem auto; }
+    margin: 3rem auto; }
     .home_main__btn a {
       display: inline-block;
       position: relative;
@@ -181,7 +180,8 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    margin-bottom: 2rem; }
     .home_productos__imagenes h2 {
       text-align: center;
       font-family: "Caveat", cursive; }
@@ -203,7 +203,7 @@ p {
     box-shadow: 0px 0px 20px burlywood; }
   .home_productos__btn {
     text-align: center;
-    margin: 5rem auto; }
+    margin: 3rem auto; }
     .home_productos__btn a {
       display: inline-block;
       position: relative;
@@ -237,7 +237,7 @@ p {
     border-top: 10px solid #5f2323;
     border-bottom: 10px solid #5f2323; }
   .home_preparacion__txt {
-    margin: 5rem 5rem;
+    margin: 3rem 5rem;
     text-align: center; }
   .home_preparacion__video video {
     width: 44rem;
@@ -265,14 +265,13 @@ p {
     background-color: rgba(245, 222, 179, 0.5);
     margin-bottom: 2rem; }
   .historia_main__txt {
-    margin: 5rem 5rem;
+    margin: 2rem 5rem;
     text-align: center; }
   .historia_main img {
     width: 44rem;
     margin: auto;
     display: block;
     box-shadow: 0px 0px 10px black;
-    margin-top: 3rem;
     margin-bottom: 3rem; }
 
 .historia_seccion {
@@ -290,14 +289,13 @@ p {
     background-color: rgba(245, 222, 179, 0.5);
     margin-bottom: 2rem; }
   .historia_seccion__txt {
-    margin: 5rem 5rem;
+    margin: 2rem 5rem;
     text-align: center; }
   .historia_seccion img {
     width: 44rem;
     margin: auto;
     display: block;
     box-shadow: 0px 0px 10px black;
-    margin-top: 3rem;
     margin-bottom: 3rem; }
 
 /* FIN PAGINA HISTORIA */
@@ -342,17 +340,20 @@ p {
     background-image: url(../assets/home_imagenes/ddl.png);
     padding: 10rem 4.3rem; }
 
-table {
-  margin: 2rem auto; }
-
 .sabores_secciones_titulos {
   text-align: center;
+  margin-bottom: 2rem;
   font-family: "Caveat", cursive; }
 
-.listado_sabores li {
-  font-size: 1.3rem;
-  margin: 1rem 0;
-  list-style: none; }
+.listado_sabores {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0; }
+  .listado_sabores li {
+    font-size: 1.3rem;
+    grid-column: 2/4;
+    margin: 8px; }
 
 .sabores_secciona, .sabores_seccionb, .sabores_seccionc {
   background-color: rgba(255, 255, 255, 0.9);
@@ -437,7 +438,7 @@ table {
     font-size: 1.3rem; }
     .contactos_main__formulario div {
       margin-top: 0.5rem; }
-  .contactos_main__field {
+  .contactos_main__field, .contactos_main__textarea {
     width: 100%;
     padding: 0.4rem;
     font-family: "Kanit", sans-serif;
@@ -445,6 +446,8 @@ table {
     outline: none;
     border: 1px solid rgba(128, 128, 128, 0.5);
     border-radius: 0.25rem; }
+  .contactos_main__textarea {
+    resize: none; }
   .contactos_main__newslatter_txt {
     font-size: 1.2rem; }
   .contactos_main__form_boton {
@@ -552,7 +555,7 @@ table {
     margin-left: 0.7rem; }
   .contactos_main__newslatter_txt {
     font-size: 1.1rem; }
-  .contactos_main__field {
+  .contactos_main__field, .contactos_main__textarea {
     width: 95%; }
   .contactos_main__form_boton {
     width: 95%;
@@ -602,8 +605,12 @@ table {
     padding: 6rem 16%; }
   .sabores_main__botones__leche {
     padding: 6rem 10.5%; }
-  .listado_sabores li {
-    font-size: 1.1rem; }
+  .listado_sabores {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr 1fr; }
+    .listado_sabores li {
+      font-size: 1.1rem; }
   .galeria_main__titulo {
     margin-bottom: 0; }
   .galeria_main__imagenes {

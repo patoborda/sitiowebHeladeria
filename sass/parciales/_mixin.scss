@@ -80,7 +80,7 @@
 
 @mixin btn-hover {
         text-align: center;
-        margin: 5rem auto;
+        margin: 3rem auto;
             a {
                 display: inline-block;
                 position: relative;
@@ -104,7 +104,6 @@
     margin: auto;
     display: block;
     box-shadow: map-get($sombra, size-1);
-    margin-top: 3rem;
     margin-bottom: 3rem; 
 }
 
@@ -119,7 +118,7 @@
        
     }
     &__txt {
-        margin: 5rem 5rem;
+        margin: 2rem 5rem;
         text-align: center;
     }
     

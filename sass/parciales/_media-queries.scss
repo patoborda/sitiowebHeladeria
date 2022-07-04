@@ -239,10 +239,14 @@
             }
         }
     }
-    .listado_sabores li {
+    .listado_sabores{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns:1fr 1.5fr 1fr;
+        li {
         font-size: 1.1rem;
     }
-
+    }
     .galeria_main{
         &__titulo {
             margin-bottom: 0;

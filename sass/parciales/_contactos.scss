@@ -23,16 +23,20 @@
        div {
            margin-top: 0.5rem;
         }
-   }
-   &__field {
-       width: 100%;
-       padding: 0.4rem;
-       font-family: $fuente-txt-2;
-       font-size: 1.1rem;
-       outline: none;
-       border: $borde-1px-solid map-get($colores,"gris");
-       border-radius: 0.25rem;
-   }
+    }
+    &__field {
+        width: 100%;
+        padding: 0.4rem;
+        font-family: $fuente-txt-2;
+        font-size: 1.1rem;
+        outline: none;
+        border: $borde-1px-solid map-get($colores,"gris");
+        border-radius: 0.25rem;
+    }
+    &__textarea {
+        @extend  .contactos_main__field;
+        resize: none;
+    }
    &__newslatter_txt {
        font-size: 1.2rem;
    }
